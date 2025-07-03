@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic CSS Grid Layout</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold text-center">Basic CSS Grid Layout</h1>
+  </header>
+
+  <main class="grid grid-cols-3 gap-4 px-4">
+    <div class="bg-blue-200 p-4">Column 1</div>
+    <div class="bg-blue-300 p-4">Column 2</div>
+    <div class="bg-blue-400 p-4">Column 3</div>
+  </main>
+</body>
+</html>

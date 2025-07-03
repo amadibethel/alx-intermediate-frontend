@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+<body class="p-4">
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Grid and Flexbox Layout with Image Gallery</h1>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <section class="lg:col-span-2 flex flex-col gap-4">
+      <div class="flex">
+        <div class="bg-gradient-to-r from-red-200 to-red-300 p-4 w-1/2">Flexbox Item 1</div>
+        <div class="bg-gradient-to-r from-red-400 to-red-500 p-4 w-1/2">Flexbox Item 2</div>
+      </div>
+
+      <!-- New Image Gallery Section -->
+      <section class="grid grid-cols-3 gap-4 sm:grid-cols-1">
+        <img src="https://via.placeholder.com/300" alt="Gallery image 1" class="w-full h-auto object-cover rounded" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image 2" class="w-full h-auto object-cover rounded" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image 3" class="w-full h-auto object-cover rounded" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image 4" class="w-full h-auto object-cover rounded" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image 5" class="w-full h-auto object-cover rounded" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image 6" class="w-full h-auto object-cover rounded" />
+      </section>
+    </section>
+
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+  </main>
+
+  <footer class="bg-gray-800 text-white p-4 mt-4">
+    <p>&copy; 2024 John Doe's Blog</p>
+  </footer>
+</body>
+</html>
