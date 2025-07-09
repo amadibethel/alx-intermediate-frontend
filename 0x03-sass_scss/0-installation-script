@@ -1,0 +1,13 @@
+# Step-by-step SASS Installation Guide
+
+# 1. Created directory for SASS project
+mkdir 0x03-sass_scss
+cd 0x03-sass_scss
+
+# 2. Installed Node.js v20.16 using NVM (Linux)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# Restart terminal
+nvm install 20.16.0
+
+# 3. Installed Sass version 3.7.4
+npm install sass@3.7.4
