@@ -1,0 +1,16 @@
+// Define the mixin
+@mixin margin-lr($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+  }
+  
+  // Use the mixin in body
+  body {
+    @include margin-lr(10px, 10px);
+  }
+  
+  // Use the mixin in div
+  div {
+    @include margin-lr(15px, 15px);
+  }
+  
